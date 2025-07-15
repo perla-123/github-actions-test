@@ -30,6 +30,12 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
 
-
+    - name: Build and Push Docker Image
+      uses: perla-123/github-test
+      with:
+        image: nanajanashia/demo-app
+        registry: docker.io
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
 
          
