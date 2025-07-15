@@ -31,8 +31,5 @@ jobs:
       run: ./gradlew build
 
 
-publish:
 
-    needs:build
-    
          
