@@ -31,7 +31,7 @@ jobs:
       run: ./gradlew build
 
     - name: Build and Push Docker Image
-      uses: perla-123/github-test
+      uses: perla0304/github-test
       with:
         image: nanajanashia/demo-app
         registry: docker.io
